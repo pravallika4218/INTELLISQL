@@ -7,7 +7,7 @@ from google import genai
 # CONFIGURE GEMINI (NEW SDK)
 # ==============================
 
-client = genai.Client(api_key="AIzaSyB3Pj79T4Ly4GunMvDRceM_Z6a9FTmj_nc")
+client = genai.Client(api_key="")
 
 # ==============================
 # FUNCTION: Convert Question → SQL
@@ -90,4 +90,5 @@ if st.button("Generate & Execute Query"):
             st.error("data.db not found. Please create the database first.")
 
     else:
+
         st.warning("Please enter a question.")
